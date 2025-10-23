@@ -1,0 +1,41 @@
+@use "./variable" as*;
+
+footer {
+    background-color: $azul;
+    text-align: center;
+    display: flex;
+    justify-content: space-around
+}
+
+footer section {
+    margin-top: 10px;
+}
+
+.logowp {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.scaledad {
+    .scale {
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.footerlegal {
+    .hipe {
+        color: $blanco;
+        text-decoration: none;
+
+    }
+}

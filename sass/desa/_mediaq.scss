@@ -1,0 +1,59 @@
+@use "./variable" as*;
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        width: 14rem;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    main {
+        text-align: center;
+
+        .logowp {
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .promocion {
+            flex-direction: column;
+        }
+    }
+
+    .promocion {
+        flex-direction: column;
+    }
+
+    .grillasrv {
+        grid-template-areas:
+            "texto1"
+            "foto1-2"
+            "texto2"
+            "foto2-1"
+            "texto3"
+            "foto5";
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 250px 150px 250px 150px 250px;
+        margin: 0px 10px;
+
+        .tel {
+            display: none;
+        }
+
+        .dron {
+            display: none;
+        }
+
+        .texcon2 {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@use "./variable" as*;
+
+header {
+    img {
+        width: 120px;
+        margin: 10px;
+    }
+}
+
+.navbar-brand {
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+
+.fondo-nav {
+    background-color: $azul;
+
+    .fondo-nav a {
+        color: $blanco;
+    
+    &:hover {
+        color: $hovnav;
+    }
+}
+}
+
+.logo {
+    width: 18.75rem;
+    margin: 5px;
+}
+
+.logo1 {
+    width: 18.75rem;
+    margin: 5px;
+    border-radius: 15px;
+}

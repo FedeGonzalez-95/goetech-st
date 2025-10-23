@@ -1,0 +1,332 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.edad {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+.edad .mayor, .edad .menor {
+  width: 30px;
+  color: rgb(0, 128, 0);
+}
+.edad .menor {
+  color: rgb(255, 0, 0);
+}
+
+header img {
+  width: 120px;
+  margin: 10px;
+}
+
+.navbar-brand {
+  transition: 0.5s;
+}
+.navbar-brand:hover {
+  transform: scale(1.2);
+}
+
+.fondo-nav {
+  background-color: rgb(132, 160, 253);
+}
+.fondo-nav .fondo-nav a {
+  color: rgb(255, 255, 255);
+}
+.fondo-nav .fondo-nav a:hover {
+  color: rgb(100, 149, 237);
+}
+
+.logo {
+  width: 18.75rem;
+  margin: 5px;
+}
+
+.logo1 {
+  width: 18.75rem;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: rgb(116, 116, 116);
+}
+
+p {
+  font-size: 1rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+.presentacion {
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.presentacion .presentacion1 {
+  margin: 15px;
+}
+.presentacion .presentacion1 .bold {
+  font-weight: bold;
+}
+
+.presentacion1 {
+  margin: 15px;
+}
+
+/* Promociones ---------------------------- */
+.promocion {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.promocion .logo1 {
+  width: 18.75rem;
+  margin: 5px;
+  border-radius: 15px;
+}
+.promocion .promoscale {
+  transition: 0.5s;
+}
+.promocion .promoscale:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.center {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.txtacade {
+  text-align: center;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.form {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.presentacion {
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.presentacion .center {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+/* Banner------------- */
+.banner {
+  background-image: url(../medios/banner-serv.jpg);
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.banner .texban {
+  padding-top: 20px;
+}
+
+/* Informativo ----------------------*/
+.back-negro {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.hipe {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+/* Grid servicios ------------------------------*/
+.grillasrv {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-areas: "foto1 texto1 foto1-2" "texto2 foto2-1 texto4" "foto3 texto3 foto5";
+  grid-template-columns: 25% 35% 25%;
+  grid-template-rows: 275px 275px 275px;
+  row-gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.grillasrv img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+.grillasrv .textel {
+  grid-area: texto1;
+  margin: 20px;
+}
+.grillasrv .texcon {
+  grid-area: texto2;
+  margin: 20px;
+}
+.grillasrv .texcon2 {
+  grid-area: texto4;
+  margin: 20px;
+  text-align: center;
+}
+.grillasrv .texdron {
+  grid-area: texto3;
+  margin: 20px;
+}
+.grillasrv .tel {
+  grid-area: foto1;
+}
+.grillasrv .tel2 {
+  grid-area: foto1-2;
+}
+.grillasrv .con2 {
+  grid-area: foto2-1;
+}
+.grillasrv .dron {
+  grid-area: foto3;
+}
+.grillasrv .dron2 {
+  grid-area: foto5;
+}
+
+.calidadpadre {
+  text-align: center;
+  margin: 10px;
+}
+.calidadpadre .calidad {
+  width: 18.75rem;
+  animation-name: calidad;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
+@keyframes calidad {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+footer {
+  background-color: rgb(132, 160, 253);
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer section {
+  margin-top: 10px;
+}
+
+.logowp {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  transition: 0.5s;
+}
+.logowp:hover {
+  transform: scale(1.2);
+}
+
+.scaledad .scale {
+  transition: 0.5s;
+}
+.scaledad .scale:hover {
+  transform: scale(1.2);
+}
+
+.footerlegal .hipe {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    width: 14rem;
+  }
+  nav {
+    width: 100%;
+  }
+  main {
+    text-align: center;
+  }
+  main .logowp {
+    right: 10px;
+    bottom: 10px;
+  }
+  main .promocion {
+    flex-direction: column;
+  }
+  .promocion {
+    flex-direction: column;
+  }
+  .grillasrv {
+    grid-template-areas: "texto1" "foto1-2" "texto2" "foto2-1" "texto3" "foto5";
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 250px 150px 250px 150px 250px;
+    margin: 0px 10px;
+  }
+  .grillasrv .tel {
+    display: none;
+  }
+  .grillasrv .dron {
+    display: none;
+  }
+  .grillasrv .texcon2 {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */

@@ -1,0 +1,27 @@
+$azul: rgb(132, 160, 253);
+$blanco: rgb(255, 255, 255);
+$gris: rgb(116, 116, 116);
+$negro: rgb(0, 0, 0);
+$hovnav: rgb(100, 149, 237);
+$verde: rgb(0, 128, 0);
+$rojo: rgb(255, 0, 0);
+
+$font: "Montserrat", sans-serif;
+
+.edad {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    .mayor {
+        width: 30px;
+        color: $verde;
+
+    }
+
+    .menor {
+        @extend .mayor;
+        color: $rojo;
+    }
+}
