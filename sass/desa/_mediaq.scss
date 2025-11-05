@@ -1,5 +1,6 @@
 @use "./variable" as*;
 
+/* Mobile */
 @media (max-width: 480px) {
     header {
         flex-direction: column;
@@ -58,6 +59,7 @@
     }
 }
 
+/* Tablet */
 @media (min-width: 481px) and (max-width: 780px) {
     header {
         flex-direction: column;
